@@ -6,6 +6,11 @@ uploads/products/
 uploads/*.jpg
 uploads/*.png
 
+# Local or temporary files
+imp/*.txt
+index2.html
+warehouse_db.sql
+
 # OS files
 .DS_Store
 Thumbs.db
