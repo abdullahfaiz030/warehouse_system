@@ -1,0 +1,11 @@
+
+
+<?php
+// LIVE SERVER CONFIGURATION for InfinityFree
+// REPLACE these values with your actual database credentials!
+
+Database Host: sql306.infinityfree.com(will be shown)
+Database Name: if0_41990319_warehouse_db
+Database User: if0_41990319
+Database Password: Warehouse456       
+?>

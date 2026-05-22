@@ -1,0 +1,41 @@
+
+Warehouse456
+
+
+
+    Accounts
+    if0_41990319
+
+if0_41990319 (warehouse-system) 
+
+
+====================================
+INFINITYFREE HOSTING CREDENTIALS
+====================================
+Date Created: May 22, 2026
+Website: warehouse-system.infinityfreeapp.com
+
+LOGIN CREDENTIALS:
+- Username: if0_41990319
+- Password: Warehouse456
+
+DATABASE CREDENTIALS (will get after creation):
+- Database Host: sqlXXX.infinityfree.com
+- Database Name: if0_XXXXXX_warehouse_db
+- Database User: if0_XXXXXX
+- Database Password: [same as account or separate]
+
+FTP CREDENTIALS:
+- FTP Host: ftp.infinityfree.com
+- FTP Username: [same as account username]
+- FTP Password: [same as account password]
+
+
+Database Host: sql306.infinityfree.com(will be shown)
+Database Name: if0_41990319_warehouse_db
+Database User: if0_41990319
+Database Password: Warehouse456
+
+
+
+

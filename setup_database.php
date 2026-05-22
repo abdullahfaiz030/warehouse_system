@@ -10,6 +10,29 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
+/**
+ * Ensure the configured database exists before connecting.
+ */
+function ensureDatabaseExists() {
+    if (!file_exists(__DIR__ . '/config.php')) {
+        return;
+    }
+
+    require_once __DIR__ . '/config.php';
+    $dsn = 'mysql:host=' . DB_HOST . ';charset=utf8mb4';
+
+    try {
+        $pdo = new PDO($dsn, DB_USER, DB_PASS, [
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+        ]);
+        $pdo->exec("CREATE DATABASE IF NOT EXISTS `" . DB_NAME . "` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;");
+    } catch (PDOException $e) {
+        // If the database already exists or the connection has issues, let the regular setup handle it.
+    }
+}
+
+ensureDatabaseExists();
 require_once 'db.php';
 
 class DatabaseSetup {
